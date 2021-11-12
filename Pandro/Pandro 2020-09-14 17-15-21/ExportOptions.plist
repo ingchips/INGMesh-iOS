@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>destination</key>
+	<string>upload</string>
+	<key>method</key>
+	<string>app-store</string>
+	<key>provisioningProfiles</key>
+	<dict>
+		<key>com.mesh.ingchips</key>
+		<string>mesh_app</string>
+	</dict>
+	<key>signingCertificate</key>
+	<string>DE79082E3186F89C23812AA6D2495128EA7C034F</string>
+	<key>signingStyle</key>
+	<string>manual</string>
+	<key>stripSwiftSymbols</key>
+	<true/>
+	<key>teamID</key>
+	<string>3Y735CMND7</string>
+	<key>uploadSymbols</key>
+	<true/>
+</dict>
+</plist>

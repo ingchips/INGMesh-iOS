@@ -1,0 +1,933 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		34043CB921BF5EC0002649AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34043CB821BF5EC0002649AA /* AppDelegate.m */; };
+		34043CBF21BF5EC1002649AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34043CBD21BF5EC1002649AA /* Main.storyboard */; };
+		34043CC121BF5EC1002649AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34043CC021BF5EC1002649AA /* Assets.xcassets */; };
+		34043CC421BF5EC1002649AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34043CC221BF5EC1002649AA /* LaunchScreen.storyboard */; };
+		34043CC721BF5EC2002649AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34043CC621BF5EC2002649AA /* main.m */; };
+		34043CD621BF654A002649AA /* PandroSuperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34043CD521BF654A002649AA /* PandroSuperViewController.m */; };
+		34043CDA21BF65B2002649AA /* PandroActorEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 34043CD921BF65B2002649AA /* PandroActorEngine.m */; };
+		34043CDD21BF6926002649AA /* PandroActorSuperActor.m in Sources */ = {isa = PBXBuildFile; fileRef = 34043CDC21BF6926002649AA /* PandroActorSuperActor.m */; };
+		34043CE021BF6938002649AA /* NSObject+Actor.m in Sources */ = {isa = PBXBuildFile; fileRef = 34043CDF21BF6938002649AA /* NSObject+Actor.m */; };
+		34043CE321BF6AC0002649AA /* PandroNavBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34043CE221BF6AC0002649AA /* PandroNavBarView.m */; };
+		34043CE621BF6B19002649AA /* UIColor+PandroColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 34043CE521BF6B19002649AA /* UIColor+PandroColor.m */; };
+		340E58D0222D17E30053D09E /* LampMeshViewGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 340E58CF222D17E30053D09E /* LampMeshViewGroupModel.m */; };
+		34318D5221CB738200950362 /* UIView+PandroView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34318D5121CB738200950362 /* UIView+PandroView.m */; };
+		34318D5721CB8E1E00950362 /* resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 34318D5621CB8E1E00950362 /* resource.bundle */; };
+		34318D5C21CB8F6700950362 /* UIImage+PandroImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 34318D5B21CB8F6700950362 /* UIImage+PandroImage.m */; };
+		34429FEC2230E369002C2034 /* PandroProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34429FEB2230E369002C2034 /* PandroProgressView.m */; };
+		3442A0112230E841002C2034 /* PandroSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3442A0102230E841002C2034 /* PandroSliderView.m */; };
+		3442A0142230EF05002C2034 /* LampDeviceRemoteControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3442A0132230EF05002C2034 /* LampDeviceRemoteControlView.m */; };
+		3442A0172230F7C3002C2034 /* LampDeviceSetHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3442A0162230F7C3002C2034 /* LampDeviceSetHeaderView.m */; };
+		3442A0222238FD51002C2034 /* LampDeviceAddSearchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3442A0212238FD51002C2034 /* LampDeviceAddSearchManager.m */; };
+		3442A0252238FE2C002C2034 /* LampDeviceAddSearchObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3442A0242238FE2C002C2034 /* LampDeviceAddSearchObject.m */; };
+		3445DD01224B5AE30067FBF9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3445DD00224B5AE30067FBF9 /* Security.framework */; };
+		3445DD11224C77240067FBF9 /* PandroBlueToothMeshMgrOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3445DD10224C77240067FBF9 /* PandroBlueToothMeshMgrOC.m */; };
+		3445DD13224C77450067FBF9 /* PandroBlueToothMeshMgrSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3445DD12224C77450067FBF9 /* PandroBlueToothMeshMgrSwift.swift */; };
+		345AAA582227D84B00AC4826 /* LampGroupSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 345AAA502227D84B00AC4826 /* LampGroupSetViewController.m */; };
+		345AAA592227D84B00AC4826 /* LampGroupSetIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 345AAA512227D84B00AC4826 /* LampGroupSetIconView.m */; };
+		345AAA5A2227D84B00AC4826 /* LampGroupSetNameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 345AAA532227D84B00AC4826 /* LampGroupSetNameView.m */; };
+		345AAA642227D8D300AC4826 /* LampDeviceCircleColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 345AAA5C2227D8D300AC4826 /* LampDeviceCircleColorView.m */; };
+		345AAA652227D8D300AC4826 /* LampDeviceSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 345AAA5E2227D8D300AC4826 /* LampDeviceSetViewController.m */; };
+		345AAA662227D8D300AC4826 /* LampDeviceSetColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 345AAA5F2227D8D300AC4826 /* LampDeviceSetColorView.m */; };
+		345AAA672227D8D300AC4826 /* LampDeviceCircleTemperatureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 345AAA632227D8D300AC4826 /* LampDeviceCircleTemperatureView.m */; };
+		345AAA6A2227DB4300AC4826 /* LampDeviceAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 345AAA692227DB4300AC4826 /* LampDeviceAddViewController.m */; };
+		345AAA6D2227DE3F00AC4826 /* LampDeviceAddSearchingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 345AAA6C2227DE3F00AC4826 /* LampDeviceAddSearchingView.m */; };
+		345AAA702227DE6B00AC4826 /* LampDeviceAddSearchNilView.m in Sources */ = {isa = PBXBuildFile; fileRef = 345AAA6F2227DE6B00AC4826 /* LampDeviceAddSearchNilView.m */; };
+		345AAA732227DEA200AC4826 /* LampDeviceAddListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 345AAA722227DEA100AC4826 /* LampDeviceAddListView.m */; };
+		345AAA762227DEF500AC4826 /* LampDeviceAddConnectingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 345AAA752227DEF500AC4826 /* LampDeviceAddConnectingView.m */; };
+		345AAA792227DF1100AC4826 /* LampDeviceAddConnectFailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 345AAA782227DF1100AC4826 /* LampDeviceAddConnectFailView.m */; };
+		345AAA7C2227DF2900AC4826 /* LampDeviceAddConnectSuccView.m in Sources */ = {isa = PBXBuildFile; fileRef = 345AAA7B2227DF2900AC4826 /* LampDeviceAddConnectSuccView.m */; };
+		345AAA8022298D6000AC4826 /* LampMeshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 345AAA7F22298D6000AC4826 /* LampMeshViewController.m */; };
+		345AAA8322298DBF00AC4826 /* LampMeshGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 345AAA8222298DBF00AC4826 /* LampMeshGroupCell.m */; };
+		345AAA8622298DD600AC4826 /* LampMeshDeviceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 345AAA8522298DD600AC4826 /* LampMeshDeviceCell.m */; };
+		345AAA8922298F0C00AC4826 /* LampGroupSetDeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 345AAA8822298F0C00AC4826 /* LampGroupSetDeviceViewController.m */; };
+		347EF50E21C76D740089915F /* PandroBlueToothManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 347EF50D21C76D740089915F /* PandroBlueToothManager.m */; };
+		347EF51121C770580089915F /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 347EF51021C770580089915F /* CoreBluetooth.framework */; };
+		34AE472E222670D50031508A /* INGPortalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34AE472D222670D50031508A /* INGPortalViewController.m */; };
+		34AE4736222676F60031508A /* LampPortalSettingAboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34AE4730222676F60031508A /* LampPortalSettingAboutUsViewController.m */; };
+		34AE4737222676F60031508A /* LampPortalSettingLanguageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34AE4731222676F60031508A /* LampPortalSettingLanguageViewController.m */; };
+		34AE4738222676F60031508A /* LampPortalSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34AE4735222676F60031508A /* LampPortalSettingViewController.m */; };
+		34AE4742222677020031508A /* MeshPlaceDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 34AE473A222677010031508A /* MeshPlaceDatabase.m */; };
+		34AE4743222677020031508A /* MeshAreaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34AE473B222677010031508A /* MeshAreaModel.m */; };
+		34AE4744222677020031508A /* MeshDeviceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34AE473C222677010031508A /* MeshDeviceModel.m */; };
+		34AE4745222677020031508A /* MeshPlaceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34AE4740222677010031508A /* MeshPlaceModel.m */; };
+		34AE4748222677E70031508A /* LampPortalSettingHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34AE4747222677E70031508A /* LampPortalSettingHomeViewController.m */; };
+		34B8609221C20406001D2434 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B8609121C20406001D2434 /* FirstViewController.m */; };
+		34B8609721C2343C001D2434 /* navbar_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34B8609621C2343C001D2434 /* navbar_back@2x.png */; };
+		34B8609A21C23EAE001D2434 /* PandroActorNetworkCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B8609921C23EAE001D2434 /* PandroActorNetworkCommon.m */; };
+		34BF5D6521F5B01D006A4DF0 /* PandroButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BF5D6421F5B01D006A4DF0 /* PandroButton.m */; };
+		34BF5D6E21F71D04006A4DF0 /* PandroCircleSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BF5D6D21F71D04006A4DF0 /* PandroCircleSelectView.m */; };
+		34D14E1B225B29BC00CF6538 /* TestSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D14E1A225B29BC00CF6538 /* TestSwift.swift */; };
+		34D14E1E225B41C100CF6538 /* PandroBlueToothMeshMgrBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D14E1D225B41C100CF6538 /* PandroBlueToothMeshMgrBridge.m */; };
+		CFB3AB6D6016F14478FFA6F1 /* Pods_Pandro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47AAAB4A8263CD957A4C5852 /* Pods_Pandro.framework */; };
+		EA3C7E5E24C09668005BA06D /* SimpleOnOffStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C7E5324C09668005BA06D /* SimpleOnOffStatus.swift */; };
+		EA3C7E5F24C09668005BA06D /* SimpleOnOffGet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C7E5424C09668005BA06D /* SimpleOnOffGet.swift */; };
+		EA3C7E6024C09668005BA06D /* SimpleOnOffSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C7E5524C09668005BA06D /* SimpleOnOffSet.swift */; };
+		EA3C7E6124C09668005BA06D /* SimpleOnOffSetUnacknowledged.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C7E5624C09668005BA06D /* SimpleOnOffSetUnacknowledged.swift */; };
+		EA3C7E6224C09668005BA06D /* SimpleOnOffClientDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C7E5724C09668005BA06D /* SimpleOnOffClientDelegate.swift */; };
+		EA3C7E6324C09668005BA06D /* GenericLevelServerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C7E5824C09668005BA06D /* GenericLevelServerDelegate.swift */; };
+		EA3C7E6424C09668005BA06D /* GenericOnOffClientDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C7E5924C09668005BA06D /* GenericOnOffClientDelegate.swift */; };
+		EA3C7E6524C09668005BA06D /* GenericState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C7E5A24C09668005BA06D /* GenericState.swift */; };
+		EA3C7E6624C09668005BA06D /* GenericLevelClientDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C7E5B24C09668005BA06D /* GenericLevelClientDelegate.swift */; };
+		EA3C7E6724C09668005BA06D /* NetworkConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C7E5C24C09668005BA06D /* NetworkConnection.swift */; };
+		EA3C7E6824C09668005BA06D /* GenericOnOffServerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C7E5D24C09668005BA06D /* GenericOnOffServerDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		049BC47C2566B77A000B1CD2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		049BC46D2566B77A000B1CD2 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		049BC46F2566B77A000B1CD2 /* ActionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionViewController.h; sourceTree = "<group>"; };
+		049BC4702566B77A000B1CD2 /* ActionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionViewController.m; sourceTree = "<group>"; };
+		049BC4732566B77A000B1CD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		049BC4752566B77A000B1CD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04A32A0B250F64D3000A19E4 /* Pandro.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pandro.entitlements; sourceTree = "<group>"; };
+		2ED84DC54D29DFA175C34F73 /* Pods-Pandro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pandro.release.xcconfig"; path = "Target Support Files/Pods-Pandro/Pods-Pandro.release.xcconfig"; sourceTree = "<group>"; };
+		34043CB421BF5EC0002649AA /* Pandro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pandro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		34043CB721BF5EC0002649AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		34043CB821BF5EC0002649AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		34043CBE21BF5EC1002649AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		34043CC021BF5EC1002649AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		34043CC321BF5EC1002649AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		34043CC521BF5EC2002649AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34043CC621BF5EC2002649AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		34043CD321BF654A002649AA /* PandroPageNameConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PandroPageNameConfig.h; sourceTree = "<group>"; };
+		34043CD421BF654A002649AA /* PandroSuperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PandroSuperViewController.h; sourceTree = "<group>"; };
+		34043CD521BF654A002649AA /* PandroSuperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PandroSuperViewController.m; sourceTree = "<group>"; };
+		34043CD721BF6593002649AA /* PandroActorNameConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PandroActorNameConfig.h; sourceTree = "<group>"; };
+		34043CD821BF65B2002649AA /* PandroActorEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PandroActorEngine.h; sourceTree = "<group>"; };
+		34043CD921BF65B2002649AA /* PandroActorEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PandroActorEngine.m; sourceTree = "<group>"; };
+		34043CDB21BF6926002649AA /* PandroActorSuperActor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PandroActorSuperActor.h; sourceTree = "<group>"; };
+		34043CDC21BF6926002649AA /* PandroActorSuperActor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PandroActorSuperActor.m; sourceTree = "<group>"; };
+		34043CDE21BF6938002649AA /* NSObject+Actor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Actor.h"; sourceTree = "<group>"; };
+		34043CDF21BF6938002649AA /* NSObject+Actor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Actor.m"; sourceTree = "<group>"; };
+		34043CE121BF6AC0002649AA /* PandroNavBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PandroNavBarView.h; sourceTree = "<group>"; };
+		34043CE221BF6AC0002649AA /* PandroNavBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PandroNavBarView.m; sourceTree = "<group>"; };
+		34043CE421BF6B19002649AA /* UIColor+PandroColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+PandroColor.h"; sourceTree = "<group>"; };
+		34043CE521BF6B19002649AA /* UIColor+PandroColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PandroColor.m"; sourceTree = "<group>"; };
+		340E58CE222D17E30053D09E /* LampMeshViewGroupModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LampMeshViewGroupModel.h; sourceTree = "<group>"; };
+		340E58CF222D17E30053D09E /* LampMeshViewGroupModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LampMeshViewGroupModel.m; sourceTree = "<group>"; };
+		34318D5021CB738200950362 /* UIView+PandroView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+PandroView.h"; sourceTree = "<group>"; };
+		34318D5121CB738200950362 /* UIView+PandroView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+PandroView.m"; sourceTree = "<group>"; };
+		34318D5621CB8E1E00950362 /* resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = resource.bundle; sourceTree = "<group>"; };
+		34318D5A21CB8F6700950362 /* UIImage+PandroImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+PandroImage.h"; sourceTree = "<group>"; };
+		34318D5B21CB8F6700950362 /* UIImage+PandroImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PandroImage.m"; sourceTree = "<group>"; };
+		34318D5D21CB8F9600950362 /* PandroEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PandroEngine.h; sourceTree = "<group>"; };
+		34318D6B21CCBD6500950362 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		34429FEA2230E369002C2034 /* PandroProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PandroProgressView.h; sourceTree = "<group>"; };
+		34429FEB2230E369002C2034 /* PandroProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PandroProgressView.m; sourceTree = "<group>"; };
+		3442A00F2230E841002C2034 /* PandroSliderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PandroSliderView.h; sourceTree = "<group>"; };
+		3442A0102230E841002C2034 /* PandroSliderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PandroSliderView.m; sourceTree = "<group>"; };
+		3442A0122230EF05002C2034 /* LampDeviceRemoteControlView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LampDeviceRemoteControlView.h; sourceTree = "<group>"; };
+		3442A0132230EF05002C2034 /* LampDeviceRemoteControlView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LampDeviceRemoteControlView.m; sourceTree = "<group>"; };
+		3442A0152230F7C3002C2034 /* LampDeviceSetHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LampDeviceSetHeaderView.h; sourceTree = "<group>"; };
+		3442A0162230F7C3002C2034 /* LampDeviceSetHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LampDeviceSetHeaderView.m; sourceTree = "<group>"; };
+		3442A0202238FD51002C2034 /* LampDeviceAddSearchManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LampDeviceAddSearchManager.h; sourceTree = "<group>"; };
+		3442A0212238FD51002C2034 /* LampDeviceAddSearchManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LampDeviceAddSearchManager.m; sourceTree = "<group>"; };
+		3442A0232238FE2C002C2034 /* LampDeviceAddSearchObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LampDeviceAddSearchObject.h; sourceTree = "<group>"; };
+		3442A0242238FE2C002C2034 /* LampDeviceAddSearchObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LampDeviceAddSearchObject.m; sourceTree = "<group>"; };
+		3445DBD8224B58C10067FBF9 /* Pandro-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pandro-Bridging-Header.h"; sourceTree = "<group>"; };
+		3445DD00224B5AE30067FBF9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		3445DD0F224C77240067FBF9 /* PandroBlueToothMeshMgrOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PandroBlueToothMeshMgrOC.h; sourceTree = "<group>"; };
+		3445DD10224C77240067FBF9 /* PandroBlueToothMeshMgrOC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PandroBlueToothMeshMgrOC.m; sourceTree = "<group>"; };
+		3445DD12224C77450067FBF9 /* PandroBlueToothMeshMgrSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PandroBlueToothMeshMgrSwift.swift; sourceTree = "<group>"; };
+		345AAA4F2227D84B00AC4826 /* LampGroupSetNameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LampGroupSetNameView.h; sourceTree = "<group>"; };
+		345AAA502227D84B00AC4826 /* LampGroupSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LampGroupSetViewController.m; sourceTree = "<group>"; };
+		345AAA512227D84B00AC4826 /* LampGroupSetIconView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LampGroupSetIconView.m; sourceTree = "<group>"; };
+		345AAA522227D84B00AC4826 /* LampGroupSetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LampGroupSetViewController.h; sourceTree = "<group>"; };
+		345AAA532227D84B00AC4826 /* LampGroupSetNameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LampGroupSetNameView.m; sourceTree = "<group>"; };
+		345AAA542227D84B00AC4826 /* LampGroupSetIconView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LampGroupSetIconView.h; sourceTree = "<group>"; };
+		345AAA5C2227D8D300AC4826 /* LampDeviceCircleColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LampDeviceCircleColorView.m; sourceTree = "<group>"; };
+		345AAA5D2227D8D300AC4826 /* LampDeviceCircleTemperatureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LampDeviceCircleTemperatureView.h; sourceTree = "<group>"; };
+		345AAA5E2227D8D300AC4826 /* LampDeviceSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LampDeviceSetViewController.m; sourceTree = "<group>"; };
+		345AAA5F2227D8D300AC4826 /* LampDeviceSetColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LampDeviceSetColorView.m; sourceTree = "<group>"; };
+		345AAA602227D8D300AC4826 /* LampDeviceCircleColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LampDeviceCircleColorView.h; sourceTree = "<group>"; };
+		345AAA612227D8D300AC4826 /* LampDeviceSetColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LampDeviceSetColorView.h; sourceTree = "<group>"; };
+		345AAA622227D8D300AC4826 /* LampDeviceSetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LampDeviceSetViewController.h; sourceTree = "<group>"; };
+		345AAA632227D8D300AC4826 /* LampDeviceCircleTemperatureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LampDeviceCircleTemperatureView.m; sourceTree = "<group>"; };
+		345AAA682227DB4300AC4826 /* LampDeviceAddViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LampDeviceAddViewController.h; sourceTree = "<group>"; };
+		345AAA692227DB4300AC4826 /* LampDeviceAddViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LampDeviceAddViewController.m; sourceTree = "<group>"; };
+		345AAA6B2227DE3F00AC4826 /* LampDeviceAddSearchingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LampDeviceAddSearchingView.h; sourceTree = "<group>"; };
+		345AAA6C2227DE3F00AC4826 /* LampDeviceAddSearchingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LampDeviceAddSearchingView.m; sourceTree = "<group>"; };
+		345AAA6E2227DE6B00AC4826 /* LampDeviceAddSearchNilView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LampDeviceAddSearchNilView.h; sourceTree = "<group>"; };
+		345AAA6F2227DE6B00AC4826 /* LampDeviceAddSearchNilView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LampDeviceAddSearchNilView.m; sourceTree = "<group>"; };
+		345AAA712227DEA100AC4826 /* LampDeviceAddListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LampDeviceAddListView.h; sourceTree = "<group>"; };
+		345AAA722227DEA100AC4826 /* LampDeviceAddListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LampDeviceAddListView.m; sourceTree = "<group>"; };
+		345AAA742227DEF500AC4826 /* LampDeviceAddConnectingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LampDeviceAddConnectingView.h; sourceTree = "<group>"; };
+		345AAA752227DEF500AC4826 /* LampDeviceAddConnectingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LampDeviceAddConnectingView.m; sourceTree = "<group>"; };
+		345AAA772227DF1100AC4826 /* LampDeviceAddConnectFailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LampDeviceAddConnectFailView.h; sourceTree = "<group>"; };
+		345AAA782227DF1100AC4826 /* LampDeviceAddConnectFailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LampDeviceAddConnectFailView.m; sourceTree = "<group>"; };
+		345AAA7A2227DF2900AC4826 /* LampDeviceAddConnectSuccView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LampDeviceAddConnectSuccView.h; sourceTree = "<group>"; };
+		345AAA7B2227DF2900AC4826 /* LampDeviceAddConnectSuccView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LampDeviceAddConnectSuccView.m; sourceTree = "<group>"; };
+		345AAA7E22298D6000AC4826 /* LampMeshViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LampMeshViewController.h; sourceTree = "<group>"; };
+		345AAA7F22298D6000AC4826 /* LampMeshViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LampMeshViewController.m; sourceTree = "<group>"; };
+		345AAA8122298DBF00AC4826 /* LampMeshGroupCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LampMeshGroupCell.h; sourceTree = "<group>"; };
+		345AAA8222298DBF00AC4826 /* LampMeshGroupCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LampMeshGroupCell.m; sourceTree = "<group>"; };
+		345AAA8422298DD600AC4826 /* LampMeshDeviceCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LampMeshDeviceCell.h; sourceTree = "<group>"; };
+		345AAA8522298DD600AC4826 /* LampMeshDeviceCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LampMeshDeviceCell.m; sourceTree = "<group>"; };
+		345AAA8722298F0C00AC4826 /* LampGroupSetDeviceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LampGroupSetDeviceViewController.h; sourceTree = "<group>"; };
+		345AAA8822298F0C00AC4826 /* LampGroupSetDeviceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LampGroupSetDeviceViewController.m; sourceTree = "<group>"; };
+		347EF50C21C76D740089915F /* PandroBlueToothManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PandroBlueToothManager.h; sourceTree = "<group>"; };
+		347EF50D21C76D740089915F /* PandroBlueToothManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PandroBlueToothManager.m; sourceTree = "<group>"; };
+		347EF51021C770580089915F /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		34AE472C222670D50031508A /* INGPortalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = INGPortalViewController.h; sourceTree = "<group>"; };
+		34AE472D222670D50031508A /* INGPortalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = INGPortalViewController.m; sourceTree = "<group>"; };
+		34AE4730222676F60031508A /* LampPortalSettingAboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LampPortalSettingAboutUsViewController.m; sourceTree = "<group>"; };
+		34AE4731222676F60031508A /* LampPortalSettingLanguageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LampPortalSettingLanguageViewController.m; sourceTree = "<group>"; };
+		34AE4732222676F60031508A /* LampPortalSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LampPortalSettingViewController.h; sourceTree = "<group>"; };
+		34AE4733222676F60031508A /* LampPortalSettingLanguageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LampPortalSettingLanguageViewController.h; sourceTree = "<group>"; };
+		34AE4734222676F60031508A /* LampPortalSettingAboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LampPortalSettingAboutUsViewController.h; sourceTree = "<group>"; };
+		34AE4735222676F60031508A /* LampPortalSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LampPortalSettingViewController.m; sourceTree = "<group>"; };
+		34AE473A222677010031508A /* MeshPlaceDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeshPlaceDatabase.m; sourceTree = "<group>"; };
+		34AE473B222677010031508A /* MeshAreaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeshAreaModel.m; sourceTree = "<group>"; };
+		34AE473C222677010031508A /* MeshDeviceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeshDeviceModel.m; sourceTree = "<group>"; };
+		34AE473D222677010031508A /* MeshPlaceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeshPlaceModel.h; sourceTree = "<group>"; };
+		34AE473E222677010031508A /* MeshPlaceDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeshPlaceDatabase.h; sourceTree = "<group>"; };
+		34AE473F222677010031508A /* MeshAreaModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeshAreaModel.h; sourceTree = "<group>"; };
+		34AE4740222677010031508A /* MeshPlaceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeshPlaceModel.m; sourceTree = "<group>"; };
+		34AE4741222677010031508A /* MeshDeviceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeshDeviceModel.h; sourceTree = "<group>"; };
+		34AE4746222677E70031508A /* LampPortalSettingHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LampPortalSettingHomeViewController.h; sourceTree = "<group>"; };
+		34AE4747222677E70031508A /* LampPortalSettingHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LampPortalSettingHomeViewController.m; sourceTree = "<group>"; };
+		34B8609021C20406001D2434 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		34B8609121C20406001D2434 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		34B8609621C2343C001D2434 /* navbar_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navbar_back@2x.png"; sourceTree = "<group>"; };
+		34B8609821C23EAE001D2434 /* PandroActorNetworkCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PandroActorNetworkCommon.h; sourceTree = "<group>"; };
+		34B8609921C23EAE001D2434 /* PandroActorNetworkCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PandroActorNetworkCommon.m; sourceTree = "<group>"; };
+		34BF5D6321F5B01D006A4DF0 /* PandroButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PandroButton.h; sourceTree = "<group>"; };
+		34BF5D6421F5B01D006A4DF0 /* PandroButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PandroButton.m; sourceTree = "<group>"; };
+		34BF5D6C21F71D04006A4DF0 /* PandroCircleSelectView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PandroCircleSelectView.h; sourceTree = "<group>"; };
+		34BF5D6D21F71D04006A4DF0 /* PandroCircleSelectView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PandroCircleSelectView.m; sourceTree = "<group>"; };
+		34D14E1A225B29BC00CF6538 /* TestSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSwift.swift; sourceTree = "<group>"; };
+		34D14E1C225B41C100CF6538 /* PandroBlueToothMeshMgrBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PandroBlueToothMeshMgrBridge.h; sourceTree = "<group>"; };
+		34D14E1D225B41C100CF6538 /* PandroBlueToothMeshMgrBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PandroBlueToothMeshMgrBridge.m; sourceTree = "<group>"; };
+		47AAAB4A8263CD957A4C5852 /* Pods_Pandro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pandro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		777769824071CC4784DFBE12 /* Pods-Pandro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pandro.debug.xcconfig"; path = "Target Support Files/Pods-Pandro/Pods-Pandro.debug.xcconfig"; sourceTree = "<group>"; };
+		EA3C7E5324C09668005BA06D /* SimpleOnOffStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleOnOffStatus.swift; sourceTree = "<group>"; };
+		EA3C7E5424C09668005BA06D /* SimpleOnOffGet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleOnOffGet.swift; sourceTree = "<group>"; };
+		EA3C7E5524C09668005BA06D /* SimpleOnOffSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleOnOffSet.swift; sourceTree = "<group>"; };
+		EA3C7E5624C09668005BA06D /* SimpleOnOffSetUnacknowledged.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleOnOffSetUnacknowledged.swift; sourceTree = "<group>"; };
+		EA3C7E5724C09668005BA06D /* SimpleOnOffClientDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleOnOffClientDelegate.swift; sourceTree = "<group>"; };
+		EA3C7E5824C09668005BA06D /* GenericLevelServerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericLevelServerDelegate.swift; sourceTree = "<group>"; };
+		EA3C7E5924C09668005BA06D /* GenericOnOffClientDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericOnOffClientDelegate.swift; sourceTree = "<group>"; };
+		EA3C7E5A24C09668005BA06D /* GenericState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericState.swift; sourceTree = "<group>"; };
+		EA3C7E5B24C09668005BA06D /* GenericLevelClientDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericLevelClientDelegate.swift; sourceTree = "<group>"; };
+		EA3C7E5C24C09668005BA06D /* NetworkConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConnection.swift; sourceTree = "<group>"; };
+		EA3C7E5D24C09668005BA06D /* GenericOnOffServerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericOnOffServerDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34043CB121BF5EC0002649AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3445DD01224B5AE30067FBF9 /* Security.framework in Frameworks */,
+				347EF51121C770580089915F /* CoreBluetooth.framework in Frameworks */,
+				CFB3AB6D6016F14478FFA6F1 /* Pods_Pandro.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		049BC46C2566B77A000B1CD2 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				049BC46D2566B77A000B1CD2 /* Media.xcassets */,
+				049BC46F2566B77A000B1CD2 /* ActionViewController.h */,
+				049BC4702566B77A000B1CD2 /* ActionViewController.m */,
+				049BC4722566B77A000B1CD2 /* MainInterface.storyboard */,
+				049BC4752566B77A000B1CD2 /* Info.plist */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		34043CAB21BF5EC0002649AA = {
+			isa = PBXGroup;
+			children = (
+				34043CB621BF5EC0002649AA /* Pandro */,
+				049BC46C2566B77A000B1CD2 /* test */,
+				34043CB521BF5EC0002649AA /* Products */,
+				347EF50F21C770570089915F /* Frameworks */,
+				CA86F1D24D4C9B760AEF7CA4 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		34043CB521BF5EC0002649AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34043CB421BF5EC0002649AA /* Pandro.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34043CB621BF5EC0002649AA /* Pandro */ = {
+			isa = PBXGroup;
+			children = (
+				04A32A0B250F64D3000A19E4 /* Pandro.entitlements */,
+				EA3C7E5024C09668005BA06D /* Mesh Network */,
+				3445DBD4224B56F70067FBF9 /* bluetooth_mesh */,
+				347EF4BB21C3AB090089915F /* bluetooth_test */,
+				34043CD221BF654A002649AA /* router_engine */,
+				34043CB721BF5EC0002649AA /* AppDelegate.h */,
+				34043CB821BF5EC0002649AA /* AppDelegate.m */,
+				34AE472C222670D50031508A /* INGPortalViewController.h */,
+				34AE472D222670D50031508A /* INGPortalViewController.m */,
+				34B8609021C20406001D2434 /* FirstViewController.h */,
+				34B8609121C20406001D2434 /* FirstViewController.m */,
+				345AAA452227D84B00AC4826 /* lamp_device_add */,
+				345AAA7D22298D3A00AC4826 /* lamp_mesh */,
+				345AAA5B2227D8D300AC4826 /* lamp_device_set */,
+				345AAA4E2227D84B00AC4826 /* lamp_group_set */,
+				34AE4739222677010031508A /* app_model */,
+				34AE472F222676F60031508A /* app_setting */,
+				34318D5621CB8E1E00950362 /* resource.bundle */,
+				34043CBD21BF5EC1002649AA /* Main.storyboard */,
+				34043CC021BF5EC1002649AA /* Assets.xcassets */,
+				34043CC221BF5EC1002649AA /* LaunchScreen.storyboard */,
+				34043CC521BF5EC2002649AA /* Info.plist */,
+				34043CC621BF5EC2002649AA /* main.m */,
+			);
+			path = Pandro;
+			sourceTree = "<group>";
+		};
+		34043CD221BF654A002649AA /* router_engine */ = {
+			isa = PBXGroup;
+			children = (
+				34043CD321BF654A002649AA /* PandroPageNameConfig.h */,
+				34043CD421BF654A002649AA /* PandroSuperViewController.h */,
+				34043CD521BF654A002649AA /* PandroSuperViewController.m */,
+				34043CE121BF6AC0002649AA /* PandroNavBarView.h */,
+				34043CE221BF6AC0002649AA /* PandroNavBarView.m */,
+				34043CD721BF6593002649AA /* PandroActorNameConfig.h */,
+				34043CD821BF65B2002649AA /* PandroActorEngine.h */,
+				34043CD921BF65B2002649AA /* PandroActorEngine.m */,
+				34043CDB21BF6926002649AA /* PandroActorSuperActor.h */,
+				34043CDC21BF6926002649AA /* PandroActorSuperActor.m */,
+				34B8609821C23EAE001D2434 /* PandroActorNetworkCommon.h */,
+				34B8609921C23EAE001D2434 /* PandroActorNetworkCommon.m */,
+				34BF5D6321F5B01D006A4DF0 /* PandroButton.h */,
+				34BF5D6421F5B01D006A4DF0 /* PandroButton.m */,
+				34429FEA2230E369002C2034 /* PandroProgressView.h */,
+				34429FEB2230E369002C2034 /* PandroProgressView.m */,
+				3442A00F2230E841002C2034 /* PandroSliderView.h */,
+				3442A0102230E841002C2034 /* PandroSliderView.m */,
+				34BF5D6C21F71D04006A4DF0 /* PandroCircleSelectView.h */,
+				34BF5D6D21F71D04006A4DF0 /* PandroCircleSelectView.m */,
+				34043CDE21BF6938002649AA /* NSObject+Actor.h */,
+				34043CDF21BF6938002649AA /* NSObject+Actor.m */,
+				34318D5021CB738200950362 /* UIView+PandroView.h */,
+				34318D5121CB738200950362 /* UIView+PandroView.m */,
+				34318D5A21CB8F6700950362 /* UIImage+PandroImage.h */,
+				34318D5B21CB8F6700950362 /* UIImage+PandroImage.m */,
+				34043CE421BF6B19002649AA /* UIColor+PandroColor.h */,
+				34043CE521BF6B19002649AA /* UIColor+PandroColor.m */,
+				34B8609621C2343C001D2434 /* navbar_back@2x.png */,
+				34318D5D21CB8F9600950362 /* PandroEngine.h */,
+			);
+			path = router_engine;
+			sourceTree = "<group>";
+		};
+		3445DBD4224B56F70067FBF9 /* bluetooth_mesh */ = {
+			isa = PBXGroup;
+			children = (
+				3445DD0F224C77240067FBF9 /* PandroBlueToothMeshMgrOC.h */,
+				3445DD10224C77240067FBF9 /* PandroBlueToothMeshMgrOC.m */,
+				34D14E1C225B41C100CF6538 /* PandroBlueToothMeshMgrBridge.h */,
+				34D14E1D225B41C100CF6538 /* PandroBlueToothMeshMgrBridge.m */,
+				3445DD12224C77450067FBF9 /* PandroBlueToothMeshMgrSwift.swift */,
+				3445DBD8224B58C10067FBF9 /* Pandro-Bridging-Header.h */,
+			);
+			path = bluetooth_mesh;
+			sourceTree = "<group>";
+		};
+		345AAA452227D84B00AC4826 /* lamp_device_add */ = {
+			isa = PBXGroup;
+			children = (
+				345AAA682227DB4300AC4826 /* LampDeviceAddViewController.h */,
+				345AAA692227DB4300AC4826 /* LampDeviceAddViewController.m */,
+				345AAA6B2227DE3F00AC4826 /* LampDeviceAddSearchingView.h */,
+				345AAA6C2227DE3F00AC4826 /* LampDeviceAddSearchingView.m */,
+				345AAA6E2227DE6B00AC4826 /* LampDeviceAddSearchNilView.h */,
+				345AAA6F2227DE6B00AC4826 /* LampDeviceAddSearchNilView.m */,
+				345AAA712227DEA100AC4826 /* LampDeviceAddListView.h */,
+				345AAA722227DEA100AC4826 /* LampDeviceAddListView.m */,
+				345AAA742227DEF500AC4826 /* LampDeviceAddConnectingView.h */,
+				345AAA752227DEF500AC4826 /* LampDeviceAddConnectingView.m */,
+				345AAA772227DF1100AC4826 /* LampDeviceAddConnectFailView.h */,
+				345AAA782227DF1100AC4826 /* LampDeviceAddConnectFailView.m */,
+				345AAA7A2227DF2900AC4826 /* LampDeviceAddConnectSuccView.h */,
+				345AAA7B2227DF2900AC4826 /* LampDeviceAddConnectSuccView.m */,
+				3442A0232238FE2C002C2034 /* LampDeviceAddSearchObject.h */,
+				3442A0242238FE2C002C2034 /* LampDeviceAddSearchObject.m */,
+				3442A0202238FD51002C2034 /* LampDeviceAddSearchManager.h */,
+				3442A0212238FD51002C2034 /* LampDeviceAddSearchManager.m */,
+			);
+			path = lamp_device_add;
+			sourceTree = "<group>";
+		};
+		345AAA4E2227D84B00AC4826 /* lamp_group_set */ = {
+			isa = PBXGroup;
+			children = (
+				345AAA522227D84B00AC4826 /* LampGroupSetViewController.h */,
+				345AAA502227D84B00AC4826 /* LampGroupSetViewController.m */,
+				345AAA542227D84B00AC4826 /* LampGroupSetIconView.h */,
+				345AAA512227D84B00AC4826 /* LampGroupSetIconView.m */,
+				345AAA4F2227D84B00AC4826 /* LampGroupSetNameView.h */,
+				345AAA532227D84B00AC4826 /* LampGroupSetNameView.m */,
+				345AAA8722298F0C00AC4826 /* LampGroupSetDeviceViewController.h */,
+				345AAA8822298F0C00AC4826 /* LampGroupSetDeviceViewController.m */,
+			);
+			path = lamp_group_set;
+			sourceTree = "<group>";
+		};
+		345AAA5B2227D8D300AC4826 /* lamp_device_set */ = {
+			isa = PBXGroup;
+			children = (
+				345AAA622227D8D300AC4826 /* LampDeviceSetViewController.h */,
+				345AAA5E2227D8D300AC4826 /* LampDeviceSetViewController.m */,
+				345AAA5D2227D8D300AC4826 /* LampDeviceCircleTemperatureView.h */,
+				345AAA632227D8D300AC4826 /* LampDeviceCircleTemperatureView.m */,
+				345AAA602227D8D300AC4826 /* LampDeviceCircleColorView.h */,
+				345AAA5C2227D8D300AC4826 /* LampDeviceCircleColorView.m */,
+				345AAA612227D8D300AC4826 /* LampDeviceSetColorView.h */,
+				345AAA5F2227D8D300AC4826 /* LampDeviceSetColorView.m */,
+				3442A0122230EF05002C2034 /* LampDeviceRemoteControlView.h */,
+				3442A0132230EF05002C2034 /* LampDeviceRemoteControlView.m */,
+				3442A0152230F7C3002C2034 /* LampDeviceSetHeaderView.h */,
+				3442A0162230F7C3002C2034 /* LampDeviceSetHeaderView.m */,
+			);
+			path = lamp_device_set;
+			sourceTree = "<group>";
+		};
+		345AAA7D22298D3A00AC4826 /* lamp_mesh */ = {
+			isa = PBXGroup;
+			children = (
+				345AAA7E22298D6000AC4826 /* LampMeshViewController.h */,
+				345AAA7F22298D6000AC4826 /* LampMeshViewController.m */,
+				340E58CE222D17E30053D09E /* LampMeshViewGroupModel.h */,
+				340E58CF222D17E30053D09E /* LampMeshViewGroupModel.m */,
+				345AAA8122298DBF00AC4826 /* LampMeshGroupCell.h */,
+				345AAA8222298DBF00AC4826 /* LampMeshGroupCell.m */,
+				345AAA8422298DD600AC4826 /* LampMeshDeviceCell.h */,
+				345AAA8522298DD600AC4826 /* LampMeshDeviceCell.m */,
+			);
+			path = lamp_mesh;
+			sourceTree = "<group>";
+		};
+		347EF4BB21C3AB090089915F /* bluetooth_test */ = {
+			isa = PBXGroup;
+			children = (
+				347EF50C21C76D740089915F /* PandroBlueToothManager.h */,
+				347EF50D21C76D740089915F /* PandroBlueToothManager.m */,
+				34D14E1A225B29BC00CF6538 /* TestSwift.swift */,
+			);
+			path = bluetooth_test;
+			sourceTree = "<group>";
+		};
+		347EF50F21C770570089915F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3445DD00224B5AE30067FBF9 /* Security.framework */,
+				34318D6B21CCBD6500950362 /* UserNotifications.framework */,
+				347EF51021C770580089915F /* CoreBluetooth.framework */,
+				47AAAB4A8263CD957A4C5852 /* Pods_Pandro.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		34AE472F222676F60031508A /* app_setting */ = {
+			isa = PBXGroup;
+			children = (
+				34AE4733222676F60031508A /* LampPortalSettingLanguageViewController.h */,
+				34AE4731222676F60031508A /* LampPortalSettingLanguageViewController.m */,
+				34AE4734222676F60031508A /* LampPortalSettingAboutUsViewController.h */,
+				34AE4730222676F60031508A /* LampPortalSettingAboutUsViewController.m */,
+				34AE4746222677E70031508A /* LampPortalSettingHomeViewController.h */,
+				34AE4747222677E70031508A /* LampPortalSettingHomeViewController.m */,
+				34AE4732222676F60031508A /* LampPortalSettingViewController.h */,
+				34AE4735222676F60031508A /* LampPortalSettingViewController.m */,
+			);
+			path = app_setting;
+			sourceTree = "<group>";
+		};
+		34AE4739222677010031508A /* app_model */ = {
+			isa = PBXGroup;
+			children = (
+				34AE473E222677010031508A /* MeshPlaceDatabase.h */,
+				34AE473A222677010031508A /* MeshPlaceDatabase.m */,
+				34AE473D222677010031508A /* MeshPlaceModel.h */,
+				34AE4740222677010031508A /* MeshPlaceModel.m */,
+				34AE473F222677010031508A /* MeshAreaModel.h */,
+				34AE473B222677010031508A /* MeshAreaModel.m */,
+				34AE4741222677010031508A /* MeshDeviceModel.h */,
+				34AE473C222677010031508A /* MeshDeviceModel.m */,
+			);
+			path = app_model;
+			sourceTree = "<group>";
+		};
+		CA86F1D24D4C9B760AEF7CA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				777769824071CC4784DFBE12 /* Pods-Pandro.debug.xcconfig */,
+				2ED84DC54D29DFA175C34F73 /* Pods-Pandro.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EA3C7E5024C09668005BA06D /* Mesh Network */ = {
+			isa = PBXGroup;
+			children = (
+				EA3C7E5124C09668005BA06D /* Simple OnOff */,
+				EA3C7E5824C09668005BA06D /* GenericLevelServerDelegate.swift */,
+				EA3C7E5924C09668005BA06D /* GenericOnOffClientDelegate.swift */,
+				EA3C7E5A24C09668005BA06D /* GenericState.swift */,
+				EA3C7E5B24C09668005BA06D /* GenericLevelClientDelegate.swift */,
+				EA3C7E5C24C09668005BA06D /* NetworkConnection.swift */,
+				EA3C7E5D24C09668005BA06D /* GenericOnOffServerDelegate.swift */,
+			);
+			path = "Mesh Network";
+			sourceTree = "<group>";
+		};
+		EA3C7E5124C09668005BA06D /* Simple OnOff */ = {
+			isa = PBXGroup;
+			children = (
+				EA3C7E5224C09668005BA06D /* Messages */,
+				EA3C7E5724C09668005BA06D /* SimpleOnOffClientDelegate.swift */,
+			);
+			path = "Simple OnOff";
+			sourceTree = "<group>";
+		};
+		EA3C7E5224C09668005BA06D /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				EA3C7E5324C09668005BA06D /* SimpleOnOffStatus.swift */,
+				EA3C7E5424C09668005BA06D /* SimpleOnOffGet.swift */,
+				EA3C7E5524C09668005BA06D /* SimpleOnOffSet.swift */,
+				EA3C7E5624C09668005BA06D /* SimpleOnOffSetUnacknowledged.swift */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		34043CB321BF5EC0002649AA /* Pandro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34043CCA21BF5EC2002649AA /* Build configuration list for PBXNativeTarget "Pandro" */;
+			buildPhases = (
+				89291BE2FC80381CD776A973 /* [CP] Check Pods Manifest.lock */,
+				34043CB021BF5EC0002649AA /* Sources */,
+				34043CB121BF5EC0002649AA /* Frameworks */,
+				34043CB221BF5EC0002649AA /* Resources */,
+				049BC47C2566B77A000B1CD2 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pandro;
+			productName = Pandro;
+			productReference = 34043CB421BF5EC0002649AA /* Pandro.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		34043CAC21BF5EC0002649AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = chun;
+				TargetAttributes = {
+					34043CB321BF5EC0002649AA = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1010;
+					};
+				};
+			};
+			buildConfigurationList = 34043CAF21BF5EC0002649AA /* Build configuration list for PBXProject "Pandro" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 34043CAB21BF5EC0002649AA;
+			productRefGroup = 34043CB521BF5EC0002649AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				34043CB321BF5EC0002649AA /* Pandro */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		34043CB221BF5EC0002649AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34043CC421BF5EC1002649AA /* LaunchScreen.storyboard in Resources */,
+				34B8609721C2343C001D2434 /* navbar_back@2x.png in Resources */,
+				34318D5721CB8E1E00950362 /* resource.bundle in Resources */,
+				34043CC121BF5EC1002649AA /* Assets.xcassets in Resources */,
+				34043CBF21BF5EC1002649AA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		89291BE2FC80381CD776A973 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pandro-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34043CB021BF5EC0002649AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				345AAA762227DEF500AC4826 /* LampDeviceAddConnectingView.m in Sources */,
+				34043CDA21BF65B2002649AA /* PandroActorEngine.m in Sources */,
+				3442A0172230F7C3002C2034 /* LampDeviceSetHeaderView.m in Sources */,
+				EA3C7E5F24C09668005BA06D /* SimpleOnOffGet.swift in Sources */,
+				EA3C7E6824C09668005BA06D /* GenericOnOffServerDelegate.swift in Sources */,
+				34D14E1E225B41C100CF6538 /* PandroBlueToothMeshMgrBridge.m in Sources */,
+				34AE4743222677020031508A /* MeshAreaModel.m in Sources */,
+				345AAA702227DE6B00AC4826 /* LampDeviceAddSearchNilView.m in Sources */,
+				34B8609A21C23EAE001D2434 /* PandroActorNetworkCommon.m in Sources */,
+				3442A0252238FE2C002C2034 /* LampDeviceAddSearchObject.m in Sources */,
+				345AAA8922298F0C00AC4826 /* LampGroupSetDeviceViewController.m in Sources */,
+				345AAA662227D8D300AC4826 /* LampDeviceSetColorView.m in Sources */,
+				345AAA8622298DD600AC4826 /* LampMeshDeviceCell.m in Sources */,
+				34043CE021BF6938002649AA /* NSObject+Actor.m in Sources */,
+				34043CE621BF6B19002649AA /* UIColor+PandroColor.m in Sources */,
+				3445DD13224C77450067FBF9 /* PandroBlueToothMeshMgrSwift.swift in Sources */,
+				345AAA6A2227DB4300AC4826 /* LampDeviceAddViewController.m in Sources */,
+				EA3C7E6224C09668005BA06D /* SimpleOnOffClientDelegate.swift in Sources */,
+				34318D5C21CB8F6700950362 /* UIImage+PandroImage.m in Sources */,
+				347EF50E21C76D740089915F /* PandroBlueToothManager.m in Sources */,
+				345AAA8022298D6000AC4826 /* LampMeshViewController.m in Sources */,
+				34AE4742222677020031508A /* MeshPlaceDatabase.m in Sources */,
+				34AE4736222676F60031508A /* LampPortalSettingAboutUsViewController.m in Sources */,
+				EA3C7E6624C09668005BA06D /* GenericLevelClientDelegate.swift in Sources */,
+				34AE4745222677020031508A /* MeshPlaceModel.m in Sources */,
+				3442A0112230E841002C2034 /* PandroSliderView.m in Sources */,
+				345AAA5A2227D84B00AC4826 /* LampGroupSetNameView.m in Sources */,
+				34043CD621BF654A002649AA /* PandroSuperViewController.m in Sources */,
+				345AAA732227DEA200AC4826 /* LampDeviceAddListView.m in Sources */,
+				3442A0222238FD51002C2034 /* LampDeviceAddSearchManager.m in Sources */,
+				34429FEC2230E369002C2034 /* PandroProgressView.m in Sources */,
+				34D14E1B225B29BC00CF6538 /* TestSwift.swift in Sources */,
+				EA3C7E6024C09668005BA06D /* SimpleOnOffSet.swift in Sources */,
+				EA3C7E6124C09668005BA06D /* SimpleOnOffSetUnacknowledged.swift in Sources */,
+				345AAA8322298DBF00AC4826 /* LampMeshGroupCell.m in Sources */,
+				34AE4744222677020031508A /* MeshDeviceModel.m in Sources */,
+				EA3C7E5E24C09668005BA06D /* SimpleOnOffStatus.swift in Sources */,
+				345AAA582227D84B00AC4826 /* LampGroupSetViewController.m in Sources */,
+				345AAA7C2227DF2900AC4826 /* LampDeviceAddConnectSuccView.m in Sources */,
+				34BF5D6E21F71D04006A4DF0 /* PandroCircleSelectView.m in Sources */,
+				EA3C7E6524C09668005BA06D /* GenericState.swift in Sources */,
+				34AE4738222676F60031508A /* LampPortalSettingViewController.m in Sources */,
+				34318D5221CB738200950362 /* UIView+PandroView.m in Sources */,
+				34043CC721BF5EC2002649AA /* main.m in Sources */,
+				34043CB921BF5EC0002649AA /* AppDelegate.m in Sources */,
+				34AE4748222677E70031508A /* LampPortalSettingHomeViewController.m in Sources */,
+				340E58D0222D17E30053D09E /* LampMeshViewGroupModel.m in Sources */,
+				EA3C7E6424C09668005BA06D /* GenericOnOffClientDelegate.swift in Sources */,
+				345AAA642227D8D300AC4826 /* LampDeviceCircleColorView.m in Sources */,
+				3445DD11224C77240067FBF9 /* PandroBlueToothMeshMgrOC.m in Sources */,
+				34BF5D6521F5B01D006A4DF0 /* PandroButton.m in Sources */,
+				345AAA792227DF1100AC4826 /* LampDeviceAddConnectFailView.m in Sources */,
+				EA3C7E6324C09668005BA06D /* GenericLevelServerDelegate.swift in Sources */,
+				345AAA672227D8D300AC4826 /* LampDeviceCircleTemperatureView.m in Sources */,
+				EA3C7E6724C09668005BA06D /* NetworkConnection.swift in Sources */,
+				34B8609221C20406001D2434 /* FirstViewController.m in Sources */,
+				34AE472E222670D50031508A /* INGPortalViewController.m in Sources */,
+				34043CE321BF6AC0002649AA /* PandroNavBarView.m in Sources */,
+				345AAA652227D8D300AC4826 /* LampDeviceSetViewController.m in Sources */,
+				345AAA592227D84B00AC4826 /* LampGroupSetIconView.m in Sources */,
+				345AAA6D2227DE3F00AC4826 /* LampDeviceAddSearchingView.m in Sources */,
+				3442A0142230EF05002C2034 /* LampDeviceRemoteControlView.m in Sources */,
+				34AE4737222676F60031508A /* LampPortalSettingLanguageViewController.m in Sources */,
+				34043CDD21BF6926002649AA /* PandroActorSuperActor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		049BC4722566B77A000B1CD2 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				049BC4732566B77A000B1CD2 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		34043CBD21BF5EC1002649AA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34043CBE21BF5EC1002649AA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		34043CC221BF5EC1002649AA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34043CC321BF5EC1002649AA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		34043CC821BF5EC2002649AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		34043CC921BF5EC2002649AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		34043CCB21BF5EC2002649AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 777769824071CC4784DFBE12 /* Pods-Pandro.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Pandro/Pandro.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = A732CKG63F;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = "./Pandro/OpenSSL-Universal/include-ios/**";
+				INFOPLIST_FILE = Pandro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pandro/OpenSSL-Universal/lib-ios",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ingchips.mesh3;
+				PRODUCT_NAME = Pandro;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pandro/bluetooth_mesh/Pandro-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		34043CCC21BF5EC2002649AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2ED84DC54D29DFA175C34F73 /* Pods-Pandro.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Pandro/Pandro.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = A732CKG63F;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = "./Pandro/OpenSSL-Universal/include-ios/**";
+				INFOPLIST_FILE = Pandro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pandro/OpenSSL-Universal/lib-ios",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ingchips.mesh3;
+				PRODUCT_NAME = Pandro;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=*]" = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pandro/bluetooth_mesh/Pandro-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34043CAF21BF5EC0002649AA /* Build configuration list for PBXProject "Pandro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34043CC821BF5EC2002649AA /* Debug */,
+				34043CC921BF5EC2002649AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34043CCA21BF5EC2002649AA /* Build configuration list for PBXNativeTarget "Pandro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34043CCB21BF5EC2002649AA /* Debug */,
+				34043CCC21BF5EC2002649AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 34043CAC21BF5EC0002649AA /* Project object */;
+}

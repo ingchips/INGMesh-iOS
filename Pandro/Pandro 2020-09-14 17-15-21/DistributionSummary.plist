@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Pandro.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>armv7</string>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>DE79082E3186F89C23812AA6D2495128EA7C034F</string>
+				<key>dateExpires</key>
+				<string>2021/9/12</string>
+				<key>type</key>
+				<string>Apple Distribution</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>3Y735CMND7.com.mesh.ingchips</string>
+				<key>beta-reports-active</key>
+				<true/>
+				<key>com.apple.developer.team-identifier</key>
+				<string>3Y735CMND7</string>
+				<key>get-task-allow</key>
+				<false/>
+			</dict>
+			<key>name</key>
+			<string>Pandro.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>f6469eab-6a18-4ba8-897a-7bf3efc54c9a</string>
+				<key>name</key>
+				<string>mesh_app</string>
+			</dict>
+			<key>symbols</key>
+			<true/>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>3Y735CMND7</string>
+				<key>name</key>
+				<string>Ingchips Technology Co., Ltd.</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
