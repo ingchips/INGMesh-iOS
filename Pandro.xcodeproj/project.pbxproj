@@ -60,13 +60,13 @@
 		34AE4744222677020031508A /* MeshDeviceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34AE473C222677010031508A /* MeshDeviceModel.m */; };
 		34AE4745222677020031508A /* MeshPlaceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34AE4740222677010031508A /* MeshPlaceModel.m */; };
 		34AE4748222677E70031508A /* LampPortalSettingHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34AE4747222677E70031508A /* LampPortalSettingHomeViewController.m */; };
-		34B8609221C20406001D2434 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B8609121C20406001D2434 /* FirstViewController.m */; };
 		34B8609721C2343C001D2434 /* navbar_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34B8609621C2343C001D2434 /* navbar_back@2x.png */; };
 		34B8609A21C23EAE001D2434 /* PandroActorNetworkCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B8609921C23EAE001D2434 /* PandroActorNetworkCommon.m */; };
 		34BF5D6521F5B01D006A4DF0 /* PandroButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BF5D6421F5B01D006A4DF0 /* PandroButton.m */; };
 		34BF5D6E21F71D04006A4DF0 /* PandroCircleSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BF5D6D21F71D04006A4DF0 /* PandroCircleSelectView.m */; };
 		34D14E1B225B29BC00CF6538 /* TestSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D14E1A225B29BC00CF6538 /* TestSwift.swift */; };
 		34D14E1E225B41C100CF6538 /* PandroBlueToothMeshMgrBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D14E1D225B41C100CF6538 /* PandroBlueToothMeshMgrBridge.m */; };
+		3C4B0B61274269C800B4D730 /* UIButton+SolveContinuousClick.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4B0B5F274269C700B4D730 /* UIButton+SolveContinuousClick.m */; };
 		CFB3AB6D6016F14478FFA6F1 /* Pods_Pandro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47AAAB4A8263CD957A4C5852 /* Pods_Pandro.framework */; };
 		EA3C7E5E24C09668005BA06D /* SimpleOnOffStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C7E5324C09668005BA06D /* SimpleOnOffStatus.swift */; };
 		EA3C7E5F24C09668005BA06D /* SimpleOnOffGet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C7E5424C09668005BA06D /* SimpleOnOffGet.swift */; };
@@ -207,8 +207,6 @@
 		34AE4741222677010031508A /* MeshDeviceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeshDeviceModel.h; sourceTree = "<group>"; };
 		34AE4746222677E70031508A /* LampPortalSettingHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LampPortalSettingHomeViewController.h; sourceTree = "<group>"; };
 		34AE4747222677E70031508A /* LampPortalSettingHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LampPortalSettingHomeViewController.m; sourceTree = "<group>"; };
-		34B8609021C20406001D2434 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		34B8609121C20406001D2434 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		34B8609621C2343C001D2434 /* navbar_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navbar_back@2x.png"; sourceTree = "<group>"; };
 		34B8609821C23EAE001D2434 /* PandroActorNetworkCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PandroActorNetworkCommon.h; sourceTree = "<group>"; };
 		34B8609921C23EAE001D2434 /* PandroActorNetworkCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PandroActorNetworkCommon.m; sourceTree = "<group>"; };
@@ -219,6 +217,8 @@
 		34D14E1A225B29BC00CF6538 /* TestSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSwift.swift; sourceTree = "<group>"; };
 		34D14E1C225B41C100CF6538 /* PandroBlueToothMeshMgrBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PandroBlueToothMeshMgrBridge.h; sourceTree = "<group>"; };
 		34D14E1D225B41C100CF6538 /* PandroBlueToothMeshMgrBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PandroBlueToothMeshMgrBridge.m; sourceTree = "<group>"; };
+		3C4B0B5F274269C700B4D730 /* UIButton+SolveContinuousClick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+SolveContinuousClick.m"; sourceTree = "<group>"; };
+		3C4B0B60274269C700B4D730 /* UIButton+SolveContinuousClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+SolveContinuousClick.h"; sourceTree = "<group>"; };
 		47AAAB4A8263CD957A4C5852 /* Pods_Pandro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pandro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		777769824071CC4784DFBE12 /* Pods-Pandro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pandro.debug.xcconfig"; path = "Target Support Files/Pods-Pandro/Pods-Pandro.debug.xcconfig"; sourceTree = "<group>"; };
 		EA3C7E5324C09668005BA06D /* SimpleOnOffStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleOnOffStatus.swift; sourceTree = "<group>"; };
@@ -291,14 +291,13 @@
 				34043CB821BF5EC0002649AA /* AppDelegate.m */,
 				34AE472C222670D50031508A /* INGPortalViewController.h */,
 				34AE472D222670D50031508A /* INGPortalViewController.m */,
-				34B8609021C20406001D2434 /* FirstViewController.h */,
-				34B8609121C20406001D2434 /* FirstViewController.m */,
 				345AAA452227D84B00AC4826 /* lamp_device_add */,
 				345AAA7D22298D3A00AC4826 /* lamp_mesh */,
 				345AAA5B2227D8D300AC4826 /* lamp_device_set */,
 				345AAA4E2227D84B00AC4826 /* lamp_group_set */,
 				34AE4739222677010031508A /* app_model */,
 				34AE472F222676F60031508A /* app_setting */,
+				3C4B0B5E2742698800B4D730 /* Category */,
 				34318D5621CB8E1E00950362 /* resource.bundle */,
 				34043CBD21BF5EC1002649AA /* Main.storyboard */,
 				34043CC021BF5EC1002649AA /* Assets.xcassets */,
@@ -484,6 +483,15 @@
 			path = app_model;
 			sourceTree = "<group>";
 		};
+		3C4B0B5E2742698800B4D730 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				3C4B0B60274269C700B4D730 /* UIButton+SolveContinuousClick.h */,
+				3C4B0B5F274269C700B4D730 /* UIButton+SolveContinuousClick.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		CA86F1D24D4C9B760AEF7CA4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -664,6 +672,7 @@
 				345AAA8322298DBF00AC4826 /* LampMeshGroupCell.m in Sources */,
 				34AE4744222677020031508A /* MeshDeviceModel.m in Sources */,
 				EA3C7E5E24C09668005BA06D /* SimpleOnOffStatus.swift in Sources */,
+				3C4B0B61274269C800B4D730 /* UIButton+SolveContinuousClick.m in Sources */,
 				345AAA582227D84B00AC4826 /* LampGroupSetViewController.m in Sources */,
 				345AAA7C2227DF2900AC4826 /* LampDeviceAddConnectSuccView.m in Sources */,
 				34BF5D6E21F71D04006A4DF0 /* PandroCircleSelectView.m in Sources */,
@@ -682,7 +691,6 @@
 				EA3C7E6324C09668005BA06D /* GenericLevelServerDelegate.swift in Sources */,
 				345AAA672227D8D300AC4826 /* LampDeviceCircleTemperatureView.m in Sources */,
 				EA3C7E6724C09668005BA06D /* NetworkConnection.swift in Sources */,
-				34B8609221C20406001D2434 /* FirstViewController.m in Sources */,
 				34AE472E222670D50031508A /* INGPortalViewController.m in Sources */,
 				34043CE321BF6AC0002649AA /* PandroNavBarView.m in Sources */,
 				345AAA652227D8D300AC4826 /* LampDeviceSetViewController.m in Sources */,

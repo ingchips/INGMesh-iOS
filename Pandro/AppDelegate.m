@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "FirstViewController.h"
 //#import "MeshPlaceListViewController.h"
 #import "MeshPlaceDatabase.h"
 #import "LampDeviceSetViewController.h"
@@ -45,12 +44,11 @@
     [[MeshPlaceDatabase shareInstance] refreshDatabase];
     
     
-    FirstViewController *firstVC = [[FirstViewController alloc] init];
 //    LampPortalViewController *firstVC = [[LampPortalViewController alloc] init];
     
 //    LampMeshViewController *firstVC = [[LampMeshViewController alloc] init];
 
-    firstVC = [[INGPortalViewController alloc] init];
+    INGPortalViewController *firstVC = [[INGPortalViewController alloc] init];
 //
 //    firstVC = [[LampDeviceSetViewController alloc] init];
 //    NSMutableDictionary *dictItem = [[NSMutableDictionary alloc] init];

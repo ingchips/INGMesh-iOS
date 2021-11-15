@@ -10,7 +10,7 @@
 #import "PandroEngine.h"
 #import "PandroBlueToothMeshMgrOC.h"
 #import "PandroBlueToothMeshMgrBridge.h"
-
+#import "UIButton+SolveContinuousClick.h"
 
 @interface LampMeshGroupCell ()
 
@@ -279,6 +279,7 @@
     {
         _switchBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [_switchBtn setImage:[UIImage loadImageWithName:@"lamp_mesh_cell_switch_off"] forState:UIControlStateNormal];
+        _switchBtn.scc_custom_acceptEventInterval = 1.0;//防止点击两次
         [_switchBtn addTarget:self action:@selector(clickSwitchBtn) forControlEvents:UIControlEventTouchUpInside];
     }
     return _switchBtn;

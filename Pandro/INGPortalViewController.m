@@ -65,12 +65,12 @@
         if (i == 1)
         {
             imageName = @"app_home_lock";
-            tipText = @"场景二";
+            tipText = @"智能门锁";
         }
         else if (i == 2)
         {
             imageName = @"app_home_cloth";
-            tipText = @"场景三";
+            tipText = @"穿戴设备";
         }
         [btn setImage:[UIImage loadImageWithName:imageName] forState:UIControlStateNormal];
         
