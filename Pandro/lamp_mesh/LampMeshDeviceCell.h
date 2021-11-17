@@ -21,6 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic,strong)NSIndexPath *indexPath;
 @property(nonatomic, strong)MeshPlaceModel *placeModel;
+@property(nonatomic,strong)NSString *nameStr;
 @property(nonatomic,weak)id<LampMeshDeviceCellDelegate> lampMeshDeviceCellDelegate;
 -(void)showContentFromModule:(MeshDeviceModel *)module;
 

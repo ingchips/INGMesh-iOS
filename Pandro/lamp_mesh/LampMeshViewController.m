@@ -259,6 +259,7 @@
     cell.placeModel = self.placeModel;
     LampMeshViewGroupModel *groupModule = [self.groupArray objectAtIndex:indexPath.section];
     MeshDeviceModel *deviceModule = [groupModule.deviceArray objectAtIndex:indexPath.row - 1];
+    cell.nameStr = self.proxyName;
     cell.indexPath = indexPath;
     cell.lampMeshDeviceCellDelegate = self;
     [cell showContentFromModule:deviceModule];

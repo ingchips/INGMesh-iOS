@@ -117,8 +117,12 @@
         
         self.iconImgView.image = [UIImage loadImageWithName:@"group_set_icon_device_sel"];
         self.groupNameLabel.text = [NSString stringWithFormat:@"%@(%ld个设备)",self.groupNameLabel.text,self.groupModel.deviceArray.count];
+        NSString *connectedDevice = [[NSUserDefaults standardUserDefaults] objectForKey:@"ConnectedDevice"];
+        
         if (self.nameStr && [self.nameStr isKindOfClass:[NSString class]] && self.nameStr.length > 0) {
             self.groupTipLabel.text = [NSString stringWithFormat:@"现在链接的设备(%@)", self.nameStr];
+        }else if (connectedDevice != nil && [connectedDevice isKindOfClass:[NSString class]]){
+            self.groupTipLabel.text = [NSString stringWithFormat:@"现在链接的设备(%@)", connectedDevice];
         }else{
             self.groupTipLabel.text = @"获取链接设备中...";
         }

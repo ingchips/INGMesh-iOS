@@ -359,10 +359,24 @@ class PandroBlueToothMeshMgrSwift: NSObject
       }
     //获取ProxyName
     @objc public func getProxyName(){
+        /*
+        centralManager = CBCentralManager()
+        let aryUUID = ["30240020-5101-0000-6301-000065010000","A8016100-0420-0111-CF67-B35972B9DC6E"]
+        var aryCBUUIDS = [CBUUID]()
+
+        for uuid in aryUUID{
+            let uuid = CBUUID(string: "30240020-5101-0000-6301-000065010000")
+            aryCBUUIDS.append(uuid)
+        }
+        print("==",centralManager.retrieveConnectedPeripherals(withServices: aryCBUUIDS));
         print("get proxy name\n");
+        */
+//        print("is connected = ",peripheral.state == CBPeripheralState.connected);
+        
         //add dengyiyun: to judeg whether the connection is exist or not.
         if (connection.isOpen)
         {
+            print(meshNetworkManager.proxyFilter?.proxy);
             print(meshNetworkManager.proxyFilter?.proxy?.name)
             NotificationCenter.default.post(name: NSNotification.Name("ProxyName"), object:nil, userInfo:["ProxyName":meshNetworkManager.proxyFilter?.proxy?.name])
         }
@@ -724,6 +738,7 @@ class PandroBlueToothMeshMgrSwift: NSObject
                         dicArray.append(dictM)
                     }
                 }
+                print("myDeviceFinded ==  ",dicArray);
                 PandroBlueToothMeshMgrBridge.shareInstance().myDeviceFinded(dicArray);
                }
             
@@ -1039,7 +1054,7 @@ extension PandroBlueToothMeshMgrSwift: CBCentralManagerDelegate {
 
 
 extension PandroBlueToothMeshMgrSwift: ProvisioningDelegate {
-    
+    //每当设置状态更改时调用回调。
     func provisioningState(of unprovisionedDevice: UnprovisionedDevice, didChangeTo state: ProvisionigState) {
         DispatchQueue.main.async {
             switch state {
@@ -1067,7 +1082,7 @@ extension PandroBlueToothMeshMgrSwift: ProvisioningDelegate {
             }
         }
     }
-    
+    ///需要身份验证操作时调用回调
     func authenticationActionRequired(_ action: AuthAction) {
         switch action {
         case let .provideStaticKey(callback: callback):
@@ -1200,27 +1215,32 @@ extension PandroBlueToothMeshMgrSwift: MeshNetworkDelegate {
                     }
                     self.keysCTL = self.modelCTL.parentElement?.parentNode?.applicationKeysAvailableFor(self.modelCTL)
                     
-                    let selectedAppKeyCTL = self.keysCTL[0]
-                    guard let messageTCL = ConfigModelAppBind(applicationKey: selectedAppKeyCTL, to: self.modelCTL) else {
-                        return
+                    if (self.keysCTL.count > 0){//fix crash
+                        let selectedAppKeyCTL = self.keysCTL[0]
+                        guard let messageTCL = ConfigModelAppBind(applicationKey: selectedAppKeyCTL, to: self.modelCTL) else {
+                            return
+                        }
+                        self.start("Binding Application Key...CTL") {
+                            print("Binding Application KeyCTL")
+                            return try self.meshNetworkManager.send(messageTCL, to: self.modelCTL)
+                        }
                     }
-                    self.start("Binding Application Key...CTL") {
-                        print("Binding Application KeyCTL")
-                        return try self.meshNetworkManager.send(messageTCL, to: self.modelCTL)
-                    }
+                    
                 }
                 DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.4) {
                     if(self.modelHSL != nil)
                     {
                               self.keysHSL = self.modelHSL.parentElement?.parentNode?.applicationKeysAvailableFor(self.modelHSL)
-                              let selectedAppKeyHSL = self.keysHSL[0]
-                              guard let messageHSL = ConfigModelAppBind(applicationKey: selectedAppKeyHSL, to: self.modelHSL) else {
-                                  return
-                              }
-                              self.start("Binding Application Key...HSL") {
-                                  print("Binding Application KeyHSL")
-                                  return try self.meshNetworkManager.send(messageHSL, to: self.modelHSL)
-                              }
+                            if (self.keysHSL.count > 0){//fix crash
+                                let selectedAppKeyHSL = self.keysHSL[0]
+                                guard let messageHSL = ConfigModelAppBind(applicationKey: selectedAppKeyHSL, to: self.modelHSL) else {
+                                    return
+                                }
+                                self.start("Binding Application Key...HSL") {
+                                    print("Binding Application KeyHSL")
+                                    return try self.meshNetworkManager.send(messageHSL, to: self.modelHSL)
+                                }
+                            }  
                     }
                 }
                 DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.6) {
