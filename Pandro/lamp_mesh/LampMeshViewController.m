@@ -238,7 +238,8 @@
         }
         
         LampMeshViewGroupModel *groupModule = [self.groupArray objectAtIndex:indexPath.section];
-        cell.nameStr = self.proxyName;
+        NSString *connectedDevice = [[NSUserDefaults standardUserDefaults] objectForKey:@"ConnectedDevice"];
+        cell.nameStr = connectedDevice;
         cell.indexPath = indexPath;
         cell.lampMeshGroupDeviceCellDelegate = self;
         [cell showContentFromModule:groupModule];
@@ -259,7 +260,8 @@
     cell.placeModel = self.placeModel;
     LampMeshViewGroupModel *groupModule = [self.groupArray objectAtIndex:indexPath.section];
     MeshDeviceModel *deviceModule = [groupModule.deviceArray objectAtIndex:indexPath.row - 1];
-    cell.nameStr = self.proxyName;
+    NSString *connectedDevice = [[NSUserDefaults standardUserDefaults] objectForKey:@"ConnectedDevice"];
+    cell.nameStr = connectedDevice;
     cell.indexPath = indexPath;
     cell.lampMeshDeviceCellDelegate = self;
     [cell showContentFromModule:deviceModule];

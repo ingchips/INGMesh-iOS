@@ -64,7 +64,6 @@
     self.deviceModel = deviceModel;
     self.deviceNameLabel.text = deviceModel.name;
     self.deviceIdLabel.text = deviceModel.deviceId;
-    NSString *connectedDevice = [[NSUserDefaults standardUserDefaults] objectForKey:@"ConnectedDevice"];
     
     if (self.deviceModel.switchOn)
     {
@@ -75,13 +74,11 @@
         [_switchBtn setImage:[UIImage loadImageWithName:@"lamp_mesh_cell_switch_off"] forState:UIControlStateNormal];
     }
     
-    if (self.nameStr && [self.nameStr isKindOfClass:[NSString class]] && self.nameStr.length > 0 && [self.nameStr isEqualToString:deviceModel.name]) {
+    if (self.nameStr && [self.nameStr isKindOfClass:[NSString class]] && self.nameStr.length > 0 && [self.nameStr isEqualToString:deviceModel.name]  && ![self.nameStr isEqualToString:@"Unknown Device"]) {
         self.deviceNameLabel.textColor = [UIColor redColor];
         self.deviceIdLabel.textColor = [UIColor redColor];
-    }else if (connectedDevice != nil && [connectedDevice isKindOfClass:[NSString class]] && [connectedDevice isEqualToString:deviceModel.name]){
-        self.deviceNameLabel.textColor = [UIColor redColor];
-        self.deviceIdLabel.textColor = [UIColor redColor];
-    }else{
+    }
+    else{
         self.deviceNameLabel.textColor = [UIColor blackPandroColor];
         self.deviceIdLabel.textColor = [UIColor blackPandroColor];
     }
