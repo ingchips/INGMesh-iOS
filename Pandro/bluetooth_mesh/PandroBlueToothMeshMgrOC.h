@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <CoreBlueTooth/CoreBlueTooth.h>
 
-#import "Pandro-Swift.h"
 
 @protocol PandroBlueToothMeshMgrOCDelegate <NSObject>
 

@@ -43,7 +43,7 @@
     
     [self.view addSubview:self.tableView];
     
-    _nsTime = [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(updateTime:) userInfo:nil repeats:YES];
+    
 }
 - (void)viewDidDisappear:(BOOL)animated
 {
@@ -61,6 +61,7 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     [[PandroBlueToothMeshMgrOC shareInstance] getProxyName];
+    _nsTime = [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(updateTime:) userInfo:nil repeats:YES];
 }
 - (void)viewDidAppear:(BOOL)animated
 {

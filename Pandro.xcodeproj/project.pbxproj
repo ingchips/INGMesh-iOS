@@ -543,6 +543,7 @@
 			buildConfigurationList = 34043CCA21BF5EC2002649AA /* Build configuration list for PBXNativeTarget "Pandro" */;
 			buildPhases = (
 				89291BE2FC80381CD776A973 /* [CP] Check Pods Manifest.lock */,
+				3C60097F274B4D0700E2CFDD /* Run Script */,
 				34043CB021BF5EC0002649AA /* Sources */,
 				34043CB121BF5EC0002649AA /* Frameworks */,
 				34043CB221BF5EC0002649AA /* Resources */,
@@ -606,6 +607,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3C60097F274B4D0700E2CFDD /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
 		89291BE2FC80381CD776A973 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -874,6 +893,7 @@
 				PRODUCT_NAME = Pandro;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Pandro/bluetooth_mesh/Pandro-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(PROJECT_NAME)-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -909,6 +929,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=*]" = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Pandro/bluetooth_mesh/Pandro-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(PROJECT_NAME)-Swift.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

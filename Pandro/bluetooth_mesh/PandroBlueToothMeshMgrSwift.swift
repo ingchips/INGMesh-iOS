@@ -387,6 +387,7 @@ class PandroBlueToothMeshMgrSwift: NSObject
             UserDefaults.standard.set("Unknown Device", forKey: "ConnectedDevice")
             print("=============重新连接")
             PandroBlueToothMeshMgrOC.shareInstance()
+            PandroBlueToothMeshMgrBridge.shareInstance()
         }
 
        }

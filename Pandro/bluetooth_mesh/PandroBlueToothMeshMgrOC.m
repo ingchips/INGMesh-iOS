@@ -8,6 +8,7 @@
 
 #import "PandroBlueToothMeshMgrOC.h"
 #import "PandroBlueToothMeshMgrBridge.h"
+#import "Pandro-Swift.h"
 
 @interface PandroBlueToothMeshMgrOC ()
 
