@@ -376,7 +376,7 @@ class PandroBlueToothMeshMgrSwift: NSObject
         //add dengyiyun: to judeg whether the connection is exist or not.
         if (connection.isOpen)
         {
-            print(meshNetworkManager.proxyFilter?.proxy?.name)
+            print("=====",meshNetworkManager.proxyFilter?.proxy?.name)
             NotificationCenter.default.post(name: NSNotification.Name("ProxyName"), object:nil, userInfo:["ProxyName":meshNetworkManager.proxyFilter?.proxy?.name])
         }
         else
@@ -387,7 +387,9 @@ class PandroBlueToothMeshMgrSwift: NSObject
             UserDefaults.standard.set("Unknown Device", forKey: "ConnectedDevice")
             print("=============重新连接")
             PandroBlueToothMeshMgrOC.shareInstance()
-            PandroBlueToothMeshMgrBridge.shareInstance()
+            MeshPlaceDatabase.shareInstance().refreshDatabase()
+            meshNetworkDidChange()
+            
         }
 
        }

@@ -874,8 +874,8 @@
 				CODE_SIGN_ENTITLEMENTS = Pandro/Pandro.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = A732CKG63F;
+				CURRENT_PROJECT_VERSION = 100;
+				DEVELOPMENT_TEAM = 3Y735CMND7;
 				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = "./Pandro/OpenSSL-Universal/include-ios/**";
 				INFOPLIST_FILE = Pandro/Info.plist;
@@ -888,8 +888,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pandro/OpenSSL-Universal/lib-ios",
 				);
-				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ingchips.mesh3;
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ingchips.mesh;
 				PRODUCT_NAME = Pandro;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Pandro/bluetooth_mesh/Pandro-Bridging-Header.h";
@@ -909,8 +909,8 @@
 				CODE_SIGN_ENTITLEMENTS = Pandro/Pandro.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = A732CKG63F;
+				CURRENT_PROJECT_VERSION = 100;
+				DEVELOPMENT_TEAM = 3Y735CMND7;
 				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = "./Pandro/OpenSSL-Universal/include-ios/**";
 				INFOPLIST_FILE = Pandro/Info.plist;
@@ -923,8 +923,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pandro/OpenSSL-Universal/lib-ios",
 				);
-				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ingchips.mesh3;
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ingchips.mesh;
 				PRODUCT_NAME = Pandro;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=*]" = "";

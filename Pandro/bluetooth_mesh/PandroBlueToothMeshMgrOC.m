@@ -37,7 +37,7 @@
     
     self.provisionNodes = [[NSMutableArray alloc] init];
     self.unprovisionNodes = [[NSMutableArray alloc] init];
-    
+    NSLog(@"PandroBlueToothMeshMgrOC 初始化");
     return self;
 }
 
